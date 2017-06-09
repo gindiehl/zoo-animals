@@ -6,8 +6,8 @@ This app supports zoo staff in logging and tracking admitted animals.
 ## MVP Specifications
 | Behavior                   | Input Example     | Output Example    |
 | -------------------------- | -----------------:| -----------------:|
-|The program takes user input to log newly-admitted animals and lists them out|Species: "Arctic Fox" Name: "Moon" Age: 2 Diet: "Carnivore" Location: "Northern Trail" Caretakers: 5 Sex: "Female" Likes: "Cool shade" Dislikes: "Loud noises"|Species: "Arctic Fox" Name: "Moon" Age: 2 Diet: "Carnivore" Location: "Northern Trail" Caretakers: 5 Sex: "Female" Likes: "Cool shade" Dislikes: "Loud noises"|
-|The program allows users to click on an animal to edit its properties.|click on "Arctic Fox", 'Caretakers: 6'|Caretakers: 6|
+|The program takes user input to log newly-admitted animals and lists them out|Species: "Arctic Fox" Name: "Moon" Age: 2 Diet: "Carnivore" Location: "Northern Trail" Caretakers: 5 Sex: "Female" Likes: "Cool shade" Dislikes: "Loud noises"|Species: Arctic Fox Name: Moon Age: 2 Diet: Carnivore Location: Northern Trail Caretakers: 5 Sex: Female Likes: Cool shade Dislikes: Loud noises|
+|The program allows users to click on an animal to edit its properties.|click on 'Arctic Fox', update 'Caretakers' property|Caretakers: 6|
 |The program offers options to view all animals, only young animals (less than 2 years of age), or only mature animals (more than 2 years of age)|click on "Show Young Animals"|results for young animals display|
 
 ## Further Specifications
