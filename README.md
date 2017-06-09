@@ -6,17 +6,19 @@ This app supports zoo staff in logging and tracking admitted animals.
 ## MVP Specifications
 | Behavior                   | Input Example     | Output Example    |
 | -------------------------- | -----------------:| -----------------:|
-|The program takes user input to log newly-admitted animals and lists them out|Species: "Arctic Fox" Name: "Moon" Age: 2 Diet: "Carnivore" Location: "Northern Trail" Caretakers: 5 Sex: "Female" Likes: "Cool shade" Dislikes: "Loud noises"|Species: Arctic Fox Name: Moon Age: 2 Diet: Carnivore Location: Northern Trail Caretakers: 5 Sex: Female Likes: Cool shade Dislikes: Loud noises|
+|The program takes user input to log newly-admitted animals and lists them out|Species: "Arctic Fox" Name: "Moon" Age: 2 Diet: "Carnivore" Native Region: "Arctic Tundra of Northern Hemisphere" Location: "Northern Trail" Caretakers: 5 Sex: "Female" Likes: "Cool shade" Dislikes: "Loud noises" ConservationStatus: "Least Concern(LC)"|Species: Arctic Fox Name: Moon Age: 2 Diet: Carnivore Native Region: Arctic Tundra of Northern Hemisphere Location: Northern Trail Caretakers: 5 Sex: Female Likes: Cool shade Dislikes: Loud noises ConservationStatus: Least Concern(LC)|
 |The program allows users to click on an animal to edit its properties.|click on 'Arctic Fox', update 'Caretakers' property|Caretakers: 6|
 |The program offers options to view all animals, only young animals (less than 2 years of age), or only mature animals (more than 2 years of age)|click on "Show Young Animals"|results for young animals display|
 
 ## Further Specifications
 | Behavior                   | Input Example     | Output Example    |
 | -------------------------- | -----------------:| -----------------:|
-|The program adds & displays total number of caretakers needed in a day|number of Caretakers|total Caretakers needed|
+|The program differentiates between animals' conservation status|click on 'Endangered'|animals logged as Endangered display|
 |The program differentiates between animals' species|click on 'Reptiles'|animals classified as Reptiles display|
 |The program differentiates between animals' diet types|click on 'Omnivores'|animals logged as Omnivores display|
+|The program adds & displays total number of caretakers needed in a day|number of Caretakers|total Caretakers needed|
 |The program records the date each animal was admitted|'Date Admitted: 03/12/2017'|Date Admitted: 03/12/2017|
+
 
 
 ### Setup/Installation Requirements
