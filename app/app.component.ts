@@ -25,4 +25,7 @@ export class AppComponent {
     new Animal('Northwest Black Tailed Deer', 'Tinkerbell', 8, 'Herbivore', 'Pacific NW US & Canada', 'Northern Trail', 2, 'Female', 'Delicate roots and leaves', 'Sudden movement', 'LC')
   ];
 
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
+  }
 }
