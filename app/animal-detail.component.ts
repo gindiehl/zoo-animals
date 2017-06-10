@@ -22,6 +22,10 @@ import { Animal } from './animal.model';
         <li><b>Dislikes:</b> {{detailAnimal.dislikes}}</li>
         <li><b>Conservation Status:</b> {{detailAnimal.status}}</li>
       </ul>
+
+    <div class="col-sm-6">
+      <edit-animal [editAnimal]="detailAnimal" (ngOnInit)="ngOnInit(detailAnimal)"></edit-animal>
+    </div>
     </div>
   `
 })

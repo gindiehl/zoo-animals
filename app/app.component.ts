@@ -8,10 +8,10 @@ import { Animal } from './animal.model';
     <div class="jumbotron">
       <h1>ZOO ANIMALS</h1>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
     </div>
-    <ul class="col-md-6">
+    <ul class="col-sm-6">
       <animal-list [childAnimalList]="masterAnimalList" (ngOnInit)="ngOnInit(masterAnimalList)"></animal-list>
     </ul>
  </div>

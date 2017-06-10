@@ -1,7 +1,13 @@
 ul {
   list-style-type: none;
+  text-align: left;
 }
 
 .jumbotron {
   background-color: white;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
 }
