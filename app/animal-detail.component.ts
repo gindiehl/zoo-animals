@@ -23,9 +23,10 @@ import { Animal } from './animal.model';
         <li><b>Conservation Status:</b> {{detailAnimal.status}}</li>
       </ul>
 
-    <div class="col-sm-6">
-      <edit-animal [editAnimal]="detailAnimal" (ngOnInit)="ngOnInit(detailAnimal)"></edit-animal>
-    </div>
+      <div class="col-sm-6">
+        <edit-animal [editAnimal]="detailAnimal" (ngOnInit)="ngOnInit(detailAnimal)"></edit-animal>
+        <button (click)="deleteAnimal(detailIndex)" class="btn btn-danger">Delete</button>
+      </div>
     </div>
   `
 })
@@ -33,5 +34,10 @@ import { Animal } from './animal.model';
 export class AnimalDetailComponent {
   @Input() detailAnimal: Animal;
   @Input() detailIndex: number;
+  @Output() deleteAnimalSender = new EventEmitter();
+
+  deleteAnimal(i: number) {
+    this.deleteAnimalSender.emit(i);
+  }
 
 }

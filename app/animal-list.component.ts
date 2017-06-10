@@ -12,7 +12,8 @@ import { Animal } from './animal.model';
     </select>
 
     <ul>
-      <li *ngFor="let animal of childAnimalList | age:filterByAge; let i-index" class="row"><animal-detail [detailAnimal]="animal" [detailIndex]="i"></animal-detail>
+      <li *ngFor="let animal of childAnimalList | age:filterByAge; let i=index" class="row">
+        <animal-detail [detailAnimal]="animal" [detailIndex]="i" (deleteAnimalSender)="deleteAnimal($event)"></animal-detail>
       </li>
     </ul>
   `
@@ -21,11 +22,17 @@ import { Animal } from './animal.model';
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   animal: Animal;
+  @Input() detailIndex: number;
+  @Output() deleteAnimalSender = new EventEmitter();
 
   filterByAge: string = "allAnimals";
 
   ageSort(menuOption: string) {
     this.filterByAge = menuOption;
+  }
+
+  deleteAnimal(i) {
+    this.childAnimalList.splice(i, 1);
   }
 
 }
