@@ -9,7 +9,6 @@ import {Animal} from './animal.model';
 export class AgePipe implements PipeTransform {
   transform(input: Animal[], selectedAge) {
     var output: Animal[] = [];
-
     if (selectedAge === "matureAnimals") {
       input.forEach(function animal() {
         if (animal.age > 2) {
