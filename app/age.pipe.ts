@@ -10,18 +10,18 @@ export class AgePipe implements PipeTransform {
   transform(input: Animal[], selectedAge) {
     var output: Animal[] = [];
     if (selectedAge === "matureAnimals") {
-      input.forEach(function animal() {
-        if (animal.age > 2) {
-          output.push(animal);
+      for (var i=0; i< input.length; i++) {
+        if (input[i].age > 2) {
+          output.push(input[i]);
         }
-      });
+      }
       return output;
     } else if (selectedAge === "youngAnimals") {
-      input.forEach(function animal() {
-        if (animal.age <= 2) {
-          output.push(animal);
+      for (var i=0; i<input.length; i++) {
+        if (input[i].age <= 2) {
+          output.push(input[i]);
         }
-      });
+      }
       return output;
     } else {
       return input;
